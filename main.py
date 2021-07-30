@@ -12,12 +12,13 @@ class MoneyBox:
         # True, если можно добавить v монет, False иначе
 
     def add(self, v):
-        if MoneyBox.can_add(self, v) == True:
+        if MoneyBox.can_add(self, v):
             self.count += v
             return self.count
         else:
             return False
         # положить v монет в копилку
+
 
 if __name__ == "__main__":
     kopilka = MoneyBox(10)
